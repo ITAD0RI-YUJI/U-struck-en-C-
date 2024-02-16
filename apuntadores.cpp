@@ -14,9 +14,10 @@ int main()
 {
 	setlocale(LC_CTYPE, "Spanish");
 	string nombre = ""; 
-	long long int  codigo; 
-	int n,c=0; 
-	float notas[3]; 
+	// long long int codigo; 
+	int n = 0;
+	// int c = 0; 
+	// float notas[3]; 
 
 	cout << "Ingrese la cantidad de estudiantes"<< endl;
     cin >> n;
@@ -37,24 +38,24 @@ int main()
     
 	for (int i=0; i<n; i++)
 	{
-		cout<<"\n Ingrese los datos del estudiante "<<i+1<<endl; 
+		cout<<"\nIngrese los datos del estudiante "<<i+1<<endl; 
 		cout<<"Ingrese su c�digo"<<endl; 
 		cin>>(ap+i)->codigo; 
 		cin.ignore();
 		
-		cout<<"Ingrese su nombre"<<endl; 
+		cout<<"\nIngrese su nombre"<<endl; 
 		getline(cin, (ap+i)->nombre);
 		
 		for (int s=0; s<3; s++)
 		{
-			cout<<"Ingrese las tres notas"<<endl; 
+			cout<<"\nIngrese las tres notas"<<endl; 
 			cin>> (ap+i)->notas [s]; 
 		}
 	}    
 	
 	for (int i=0; i<n; i++)
 	{
-		cout<<"Datos del estudiante "<< i+1<<endl;
+		cout<<"\nDatos del estudiante "<< i+1<<endl;
 		cout<<"Nombre: " << (ap+i)->nombre<<endl; 
 		cout<<"C�digo: " << (ap+i)->codigo<<endl; 
 		

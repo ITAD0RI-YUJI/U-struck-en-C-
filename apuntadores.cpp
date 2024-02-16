@@ -14,10 +14,8 @@ int main()
 {
 	setlocale(LC_CTYPE, "Spanish");
 	string nombre = ""; 
-	// long long int codigo; 
+	
 	int n = 0;
-	// int c = 0; 
-	// float notas[3]; 
 
 	cout << "Ingrese la cantidad de estudiantes"<< endl;
     cin >> n;
